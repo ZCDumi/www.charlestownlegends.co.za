@@ -304,9 +304,22 @@
                     <div class="mb-3">
                         <textarea class="form-control" name="message" placeholder="Sponsorship Message" rows="15" required></textarea>
                     </div>
-                    <button type="submit" class="btn btn-primary w-100">Sponsor Now</button>
+                    <!--<button type="submit" class="btn btn-primary w-100">Sponsor Now</button>
                     <!--WHEN THE SPONSOR NOW BUTTON ,IT LOADS ANDS SAYS MESSAGE SENT-->
                 </form>
+                <form id="myForm">
+    <!-- Your form fields here -->
+    <button type="submit">Submit</button>
+    <p id="message"></p>
+</form>
+
+<script>
+    document.getElementById('myForm').addEventListener('submit', function(event) {
+        event.preventDefault(); // Prevents the default form submission behavior
+        document.getElementById('message').innerText = 'Submitted Successfully!';
+    });
+</script>
+
             </div>
         </section>
 
